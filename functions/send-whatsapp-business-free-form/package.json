@@ -1,0 +1,15 @@
+{
+  "name": "send-whatsapp-business-free-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Achiya Haviv",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "1.4.0"
+  }
+}
