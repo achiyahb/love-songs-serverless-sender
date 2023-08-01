@@ -1,0 +1,15 @@
+{
+  "name": "handle-saved-recipient-respond",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Achiya Haviv",
+  "license": "MIT",
+  "module": "index.js",
+  "dependencies": {
+    "mongodb": "5.7.0"
+  }
+}
