@@ -1,9 +1,6 @@
 import {SQSClient, SendMessageCommand} from '@aws-sdk/client-sqs';
 
 const SONGS_QUEUE_URL = process.env.SONGS_QUEUE_URL
-const RECIPIENT_QUEUE_URL = process.env.RECIPIENT_QUEUE_URL
-const RECIPIENT_NUMBER = process.env.RECIPIENT_NUMBER
-const SENDER_NUMBER = process.env.SENDER_NUMBER
 const client = new SQSClient({region: "eu-central-1"});
 
 export const handler = async (event) => {
@@ -23,7 +20,6 @@ export const handler = async (event) => {
     try {
         const data = await client.send(command);
         if (data) {
-            console.log("Success, message sent. MessageID:", data.MessageId);
             const bodyMessage = 'Message Send to SQS- Here is MessageId: ' + data.MessageId;
             response = {
                 statusCode: 200,
@@ -32,7 +28,7 @@ export const handler = async (event) => {
         } else {
             response = {
                 statusCode: 500,
-                body: JSON.stringify('Some error occured !!')
+                body: JSON.stringify('Some error occurred')
             };
         }
 
