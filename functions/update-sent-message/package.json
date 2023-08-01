@@ -1,0 +1,15 @@
+{
+  "name": "update-sent-message",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Achiya Haviv",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
+}
