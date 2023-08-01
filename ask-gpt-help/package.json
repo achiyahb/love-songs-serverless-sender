@@ -1,0 +1,19 @@
+{
+  "name": "ask-gpt-help",
+  "version": "1.0.0",
+  "description": "lambda function that take a prompt and use chat gpt api to generate message",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc.json src/**/*.ts --write",
+    "start": "node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Achiya Haviv",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
